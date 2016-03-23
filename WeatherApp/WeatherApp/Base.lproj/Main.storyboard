@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,15 +27,6 @@
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="35" y="31" width="166" height="35"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joa-DX-Gtr">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="35" y="255" width="59" height="21"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmu-xl-1oZ">
@@ -62,25 +53,34 @@
                                             <rect key="frame" x="198" y="76" width="200" height="200"/>
                                         </variation>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joa-DX-Gtr">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="35" y="255" width="59" height="21"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="qxv-nb-qsN"/>
-                                        <exclude reference="joa-DX-Gtr"/>
                                         <exclude reference="lmu-xl-1oZ"/>
                                         <exclude reference="zKZ-Ub-Gvl"/>
                                         <exclude reference="GKA-Ll-zHf"/>
+                                        <exclude reference="joa-DX-Gtr"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="415" height="340"/>
                                     <mask key="subviews">
                                         <include reference="qxv-nb-qsN"/>
-                                        <include reference="joa-DX-Gtr"/>
                                         <include reference="lmu-xl-1oZ"/>
                                         <include reference="zKZ-Ub-Gvl"/>
                                         <include reference="GKA-Ll-zHf"/>
+                                        <include reference="joa-DX-Gtr"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -98,6 +98,13 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="pis-GL-Cdy"/>
+                    <connections>
+                        <outlet property="currTempLabel" destination="zKZ-Ub-Gvl" id="vJV-4G-7bC"/>
+                        <outlet property="dayNameLabel" destination="qxv-nb-qsN" id="E5a-LS-kcu"/>
+                        <outlet property="lowTempLabel" destination="lmu-xl-1oZ" id="jIz-Kc-JEH"/>
+                        <outlet property="weatherImage" destination="GKA-Ll-zHf" id="769-04-EqJ"/>
+                        <outlet property="weatherTypeLabel" destination="joa-DX-Gtr" id="eR6-Y2-d2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

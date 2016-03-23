@@ -12,6 +12,7 @@
 		4387920A1CA206DD004622F1 /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438792081CA206DD004622F1 /* WeatherApp.xcdatamodeld */; };
 		4387920C1CA206DD004622F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4387920B1CA206DD004622F1 /* Assets.xcassets */; };
 		4387920F1CA206DD004622F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4387920D1CA206DD004622F1 /* LaunchScreen.storyboard */; };
+		438792171CA21338004622F1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438792161CA21338004622F1 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4387920B1CA206DD004622F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4387920E1CA206DD004622F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438792101CA206DD004622F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438792161CA21338004622F1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				438792011CA206DD004622F1 /* AppDelegate.swift */,
 				438792051CA206DD004622F1 /* Main.storyboard */,
+				438792161CA21338004622F1 /* MainViewController.swift */,
 				4387920B1CA206DD004622F1 /* Assets.xcassets */,
 				4387920D1CA206DD004622F1 /* LaunchScreen.storyboard */,
 				438792101CA206DD004622F1 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438792171CA21338004622F1 /* MainViewController.swift in Sources */,
 				4387920A1CA206DD004622F1 /* WeatherApp.xcdatamodeld in Sources */,
 				438792021CA206DD004622F1 /* AppDelegate.swift in Sources */,
 			);
