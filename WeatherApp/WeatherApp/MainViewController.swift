@@ -22,10 +22,17 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initLabel()
     }
 
-
-
+    func initLabel()
+    {
+        dayNameLabel.text = "Today, March 22"
+        dayNameLabel.textColor = UIColor.whiteColor()
+        currTempLabel.text = "65°" //shift option 8
+        lowTempLabel.text = "30°" //shift option 8
+        weatherTypeLabel.text = "Clear"
+//        weatherImage.image = 
+        
+    }
 }

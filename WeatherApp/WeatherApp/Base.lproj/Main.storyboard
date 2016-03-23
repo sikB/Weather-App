@@ -47,7 +47,7 @@
                                             <rect key="frame" x="35" y="85" width="172" height="66"/>
                                         </variation>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-Ll-zHf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01d" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-Ll-zHf">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="198" y="76" width="200" height="200"/>
@@ -111,4 +111,7 @@
             <point key="canvasLocation" x="1018.5" y="262.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01d" width="200" height="200"/>
+    </resources>
 </document>
